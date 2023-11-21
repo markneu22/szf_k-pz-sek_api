@@ -2,8 +2,14 @@ const Training = require('../models/training')
 // @desc   Get all trainings
 // @route  GET /api/trainings
 // @access Public
-exports.getTrainings = (req, res, next) => {
-  res.status(200).json({ success: true, msg: "Show all trainings", hello: req.hello });
+exports.getTrainings = async(req, res, next) => {
+     try {
+          const trainings = await Training.find()
+          res.status(200).json({ success: true, msg: "Show all trainings", data: trainings });
+     } catch (error) {
+          res.status(400).json({success:false});
+     }
+  
 };
 // @desc   Get single training
 // @route  GET /api/trainings/:id
