@@ -1,0 +1,89 @@
+{
+    "client": "Thunder Client",
+    "collectionName": "Kepzesek",
+    "dateExported": "2023-11-21T07:34:21.811Z",
+    "version": "1.1",
+    "folders": [],
+    "requests": [
+        {
+            "_id": "f2714258-2b2f-41af-9f7a-2fb0ef6aef18",
+            "colId": "e99a1ef6-6d48-43ac-8346-8f87a15010d2",
+            "containerId": "",
+            "name": "GET osszes kepzes",
+            "url": "localhost:3000/api/trainings",
+            "method": "GET",
+            "sortNum": 10000,
+            "created": "2023-11-21T07:05:56.005Z",
+            "modified": "2023-11-21T07:06:07.636Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "cfdbf8a6-f31f-4edf-9035-c3e53477b450",
+            "colId": "e99a1ef6-6d48-43ac-8346-8f87a15010d2",
+            "containerId": "",
+            "name": "GET by ID",
+            "url": "localhost:3000/api/trainings/1",
+            "method": "GET",
+            "sortNum": 30000,
+            "created": "2023-11-21T07:06:29.596Z",
+            "modified": "2023-11-21T07:07:34.061Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "e32335de-65be-4c02-a357-e816b8ea96e4",
+            "colId": "e99a1ef6-6d48-43ac-8346-8f87a15010d2",
+            "containerId": "",
+            "name": "POST uj kepzes felvetele",
+            "url": "localhost:3000/api/trainings",
+            "method": "POST",
+            "sortNum": 40000,
+            "created": "2023-11-21T07:07:14.836Z",
+            "modified": "2023-11-21T07:34:03.787Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"a\":\"a\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "145aa3eb-4598-4cd6-93f1-f51996042144",
+            "colId": "e99a1ef6-6d48-43ac-8346-8f87a15010d2",
+            "containerId": "",
+            "name": "PUT id alapjan frissites",
+            "url": "localhost:3000/api/trainings/1",
+            "method": "PUT",
+            "sortNum": 50000,
+            "created": "2023-11-21T07:08:31.612Z",
+            "modified": "2023-11-21T07:09:02.251Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"a\":\"a\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "f5d1438d-d8b1-4d93-a09a-8c5ef2f47af6",
+            "colId": "e99a1ef6-6d48-43ac-8346-8f87a15010d2",
+            "containerId": "",
+            "name": "DELETE id alapjan kepzes torlese",
+            "url": "localhost:3000/api/trainings/1",
+            "method": "DELETE",
+            "sortNum": 60000,
+            "created": "2023-11-21T07:09:15.652Z",
+            "modified": "2023-11-21T07:09:24.288Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        }
+    ]
+}
