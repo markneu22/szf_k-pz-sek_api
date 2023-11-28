@@ -16,7 +16,7 @@ exports.getTrainings = async(req, res, next) => {
 // @access Public
 exports.getTraining = async(req, res, next) => {
      try {
-          const training_data = Training.findById(req.id)
+          const training_data = await Training.findById(req.params.id)
           res.status(200).json({ success: true, msg: "Get training by ID", data: training_data});
           
      } catch (error) {
